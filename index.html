@@ -39,14 +39,36 @@
   <p>For this application to carry out it's objectives the user has to fill out the form below.</p>    
 
   <div class="textbox">
-    <form>
-      Name: <input><br><br>
-      Year of Birth; Century: <input>Year: <input><br><br>
-      Month of Birth: <input><br><br>
-      Date of Birth: <input><br><br>
-  </form><br>
+    <form action="/index.html" method="post">
+      <ol>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user-name">
+        </li><br>
+        <li>
+          <label for="century">Century of Birth:</label>
+          <input type="number" id="century" name="user-century">
+        </li><br>
+        <li>
+          <label for="year">Year of Birth:</label>
+          <input type="number" id="year" name="user-year">
+        </li><br>
+        <li>
+          <label for="month">Month of Birth:</label>
+          <input type ="number" id="month"  name="user-month">
+        </li><br>
+        <li>
+          <label for="date">Date of Birth:</label>
+          <input type="number" id="date" name="user-date">
+        </li><br>
+        <li class="button">
+          <button type="submit">Submit Form</button>
+        </li>
+      </ol>
+  
+  </form>
 </div>
-  <button>Submit</button>
+    
   <script src="scripts/scripts.js"></script>
 </body>
 </html>
