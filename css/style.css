@@ -1,6 +1,7 @@
 body {
   background-image: url(/Images/images.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+
 }
 h1 {
   color: royalblue;
@@ -10,10 +11,11 @@ p {
 }
 ul {
   color: beige;
+
 }
 .textbox {
   text-align: center;
   color: aquamarine;
   border-style: dotted;
-  display: flex;
+  display: center;
 }
