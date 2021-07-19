@@ -1,17 +1,17 @@
 body {
   background-image: url(/Images/images.jpg);
   background-repeat: repeat-y;
-  background-color: black;
+
 
 }
 h1 {
   color: royalblue;
 }
 p {
-  color: azure
+  color: lightslategray
 }
 ul {
-  color: beige;
+  color: skyblue;
 
 }
 .textbox {
