@@ -1,6 +1,7 @@
 body {
   background-image: url(/Images/images.jpg);
   background-repeat: repeat-y;
+  background-color: black;
 
 }
 h1 {
