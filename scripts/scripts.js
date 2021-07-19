@@ -2,26 +2,15 @@ let myGender = document.querySelector('html')
 myGender.onclick =function() {
   prompt('choose your gender')
 }
-function validation()
-if(((0<=day>31) && (0<=month>12))) {
-  alert('invalid')
-} else {
-  alert('valid')
-}
+let century =document.querySelector('century')
+let year = document.querySelector('year')
+let month = document.querySelector('month')
+let date = document.querySelector('date')
 
-let myButton = document.querySelector('button');
-myButton.onclick =function () {
-  collectData();
-}
-function collectData() {
-  console.log ('form1');
-  return result;
-}
-function find (dayOfTheWeek) {
+function calculate (dayOfTheWeek) {
   (((century/4)- 2*century)+((5*year/4)+((26*(month+1)/10))+day)%7)
   alert('result')
 }
-let dayOfTheWeek = parseInt(result)
 var akanFemaleName =['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama']
 var akanMaleName =['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame']
 function akanName() {
