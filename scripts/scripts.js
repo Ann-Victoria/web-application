@@ -1,4 +1,4 @@
-let myGender = document.querySelector('html')
+let myGender = document.querySelector('button')
 myGender.onclick =function() {
   prompt('choose your gender')
 }
