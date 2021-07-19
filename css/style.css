@@ -6,12 +6,18 @@ body {
 }
 h1 {
   color: royalblue;
+  font-family: fantasy;
+  font-style: italic;
+  text-shadow: springgreen;
+  text-align: center;
 }
 p {
   color: lightslategray
+  
 }
 ul {
   color: skyblue;
+  font-style: italic;
 
 }
 .textbox {
