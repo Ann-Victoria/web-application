@@ -1,18 +1,20 @@
-let myGender = document.querySelector('button')
-myGender.onclick =function() {
-  prompt('choose your gender')
-}
-let century =document.querySelector('century')
-let year = document.querySelector('year')
-let month = document.querySelector('month')
-let date = document.querySelector('date')
+let myButton = document.querySelector('button')
 
-function calculate (dayOfTheWeek) {
-  (((century/4)- 2*century)+((5*year/4)+((26*(month+1)/10))+day)%7)
-  alert('result')
+myButton.onclick = function calculate() {}
+function calculate() {
+  let century =document.getElementById('century').value
+  let year = document.getElementById('year').value
+  let month = document.getElementById('month').value
+  let day = document.getElementById('date').value
+  
+  let dayOfTheWeek = (((century/4)- 2*century)+((5*year/4)+((26*(month+1)/10))+day)%7)
+  console.log(dayOfTheWeek)
 }
-var akanFemaleName =['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama']
-var akanMaleName =['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame']
+let myGender = document.getElementById('gender').value
+console.log(myGender)
+
+let akanFemaleName =['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama']
+let akanMaleName =['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame']
 function akanName() {
 if(myGender===female && dayOfTheWeek===sunday) {
   alert('Your Akan name is ' + akanFemaleName['0'])
