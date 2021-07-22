@@ -22,8 +22,8 @@ ul {
 
 }
 .textbox {
-  text-align: center;
   color: aquamarine;
   border-style: dotted;
-  display: center;
+  display: flex;
+
 }
