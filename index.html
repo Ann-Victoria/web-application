@@ -19,67 +19,46 @@
     <p>
       Akan names are derived from Ghanian culture. Frequently in Ghana, children
       are given their first name as a 'day name' which corresponds to the day in
-      the week they were born.<br />
-      Here are Ghanian day names.<br />
-      For the males;
+      the week they were born.
     </p>
-    <ul>
-      <li>Sunday: Kwasi</li>
-      <li>Monday: Kwadwo</li>
-      <li>Tuesday: Kwabena</li>
-      <li>Wednesday: Kwaku</li>
-      <li>Thursday: Yaw</li>
-      <li>Friday: Kofi</li>
-      <li>Saturday: Kwame</li>
-    </ul>
-    <p>For the females;</p>
-    <ul>
-      <li>Sunday: Akosua</li>
-      <li>Monday: Adwoa</li>
-      <li>Tuesday: Abenaa</li>
-      <li>Wednesday: Akua</li>
-      <li>Thursday: Yaa</li>
-      <li>Friday: Afua</li>
-      <li>Saturday: Ama</li>
-    </ul>
     <p>
       For this application to carry out it's objectives the user has to fill out
       the form below.
-    </p>
+    </p><br>
     
-    <form class="row g-3 textbox" onsubmit return="false">
+    <form class="row g-3 textbox">
       <div class="col-md-6">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name">
-      </div>
-      <div class="col-md-6">
-        <label for="century" class="form-label">Century of Birth</label>
-        <input type="number" class="form-control" id="century">
-      </div>
-      <div class="col-md-6">
-        <label for="year" class="form-label">Year of Birth</label>
-        <input type="number" class="form-control" id="year">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
       </div>
       <div class="col-12">
-        <label for="month" class="form-label">Month of Birth</label>
-        <input type="number" class="form-control" id="month" min="1" max="12">
+        <label for="century" >Century of Birth:</label>
+        <input type="number" name="century" id="century" required>
       </div>
       <div class="col-12">
-        <label for="date"class="form-label">Date of Birth</label>
-        <input type="number" class="form-control" id="date" min="1" max="31">
+        <label for="year" >Year of Birth:</label>
+        <input type="number" name="year" id="year" required>
+      </div>
+      <div class="col-12">
+        <label for="month">Month of Birth:</label>
+        <input type="number" name="month" id="month">
+      </div>
+      <div class="col-12">
+        <label for="date">Date of Birth:</label>
+        <input type="number" name="date" id="date">
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-        <label class="form-check-label" for="gender">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="gender">Female:</label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-        <label class="form-check-label" for="gender">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="gender">Male:</label>
       </div>
       <div class="col-12">
-        <button onclick ="calculate()">Submit</button>
+        <button onclick ="myButton(event)">Submit</button>
       </div>
     </form>
-    <script src="scripts/scripts.js" type="text/javascript"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
   </body>
 </html>
