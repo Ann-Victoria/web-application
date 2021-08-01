@@ -9,17 +9,8 @@ function myButton(event) {
   console.log(month)
   var date = parseInt(document.getElementById('date').value)
   console.log(date)
-  var gender = document.querySelector('input[name = gender]:checked').value;
+  var gender = document.querySelector('input[name = gender]:checked').value
   console.log(gender)
-  if((month>12) || (month<=0) ) {
-    alert('Invalid, enter valid month')
-  }
-  if((date>31) || (date<=0)) {
-    alert('Invalid,enter valid date')
-  }
-  if(.value===" ") {
-    alert('input field required')
-  }
 
   var a = (~~(century/4))-2*century-1
   console.log(a)
@@ -65,9 +56,6 @@ function myButton(event) {
   }if(gender==='male' && dayOfTheWeek===6) {
     alert('Your Akan name is ' + akanMaleName['6'])
   }
-
-    
-    
 
 }
  

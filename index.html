@@ -29,7 +29,7 @@
     <form class="row g-3 textbox">
       <div class="col-md-6">
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" required>
       </div>
       <div class="col-12">
         <label for="century" >Century of Birth:</label>
@@ -41,11 +41,11 @@
       </div>
       <div class="col-12">
         <label for="month">Month of Birth:</label>
-        <input type="number" name="month" id="month">
+        <input type="number" name="month" id="month" min="1" max="12">
       </div>
       <div class="col-12">
         <label for="date">Date of Birth:</label>
-        <input type="number" name="date" id="date">
+        <input type="number" name="date" id="date" min="1" max="31">
       </div>
       <div class="form-check">
         <input type="radio" name="gender" id="female" value="female">
