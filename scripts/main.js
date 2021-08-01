@@ -9,10 +9,12 @@ function myButton(event) {
   console.log(month)
   var date = parseInt(document.getElementById('date').value)
   console.log(date)
-  if((month>12) + (month<=0) ) {
+  var gender = document.querySelector('input[name = gender]:checked').value;
+  console.log(gender)
+  if((month>12) || (month<=0) ) {
     alert('Invalid, enter valid month')
   }
-  if((date>31) + (date<=0)) {
+  if((date>31) || (date<=0)) {
     alert('Invalid,enter valid date')
   }
 
@@ -26,12 +28,41 @@ function myButton(event) {
   var dayOfTheWeek = (a+b+c+date)%7
   console.log(dayOfTheWeek)
 
-  var radio = document.getElementsByName('gender')
-    .forEach(radio => {
-      if(radio.checked) {
-        console.log(radio.value)
-      }
-    })
+  let akanFemaleName =['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama']
+  let akanMaleName =['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame']
+
+  if(gender==='female' && dayOfTheWeek===0) {
+    alert('Your Akan name is ' + akanFemaleName['0'])
+  }else if(gender==='female' && dayOfTheWeek==1) {
+    alert('Your Akan name is ' + akanFemaleName['1'])
+  }else if(gender==='female' && dayOfTheWeek==2) {
+    alert('Your Akan name is ' + akanFemaleName['2'])
+  }else if(gender==='female' && dayOfTheWeek==3) {
+    alert('Your Akan name is ' + akanFemaleName['3'])
+  }else if(gender==='female' && dayOfTheWeek==4) {
+    alert('Your Akan name is ' + akanFemaleName['4'])
+  }else if(gender==='female' && dayOfTheWeek==5) {
+    alert('Your Akan name is ' + akanFemaleName['5'])
+  }else if(gender==='female' && dayOfTheWeek==6) {
+    alert('Your Akan name is ' + akanFemaleName['6'])
+  }
+
+  if(gender==='male' && dayOfTheWeek===0) {
+    alert('Your Akan name is ' + akanMaleName['0'])
+  }else if(gender==='male' && dayOfTheWeek===1) {
+    alert('Your Akan name is ' + akanMaleName['1'])
+  }if(gender==='male' && dayOfTheWeek===2) {
+    alert('Your Akan name is ' + akanMaleName['2'])
+  }if(gender==='male' && dayOfTheWeek===3) {
+    alert('Your Akan name is ' + akanMaleName['3'])
+  }if(gender==='male' && dayOfTheWeek===4) {
+    alert('Your Akan name is ' + akanMaleName['4'])
+  }if(gender==='male' && dayOfTheWeek===5) {
+    alert('Your Akan name is ' + akanMaleName['5'])
+  }if(gender==='male' && dayOfTheWeek===6) {
+    alert('Your Akan name is ' + akanMaleName['6'])
+  }
+
     
     
 
