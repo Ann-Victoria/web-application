@@ -17,6 +17,9 @@ function myButton(event) {
   if((date>31) || (date<=0)) {
     alert('Invalid,enter valid date')
   }
+  if(.value===" ") {
+    alert('input field required')
+  }
 
   var a = (~~(century/4))-2*century-1
   console.log(a)
